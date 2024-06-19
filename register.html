@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/loginstyle.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="content" id="home">
+
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="#">Odyssey Tours</a>
+            
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" 
+            aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Odyssey Tours</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link mx-lg-2 active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="./register.html">Booking</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="./index.html#locations">Destination</a>
+                  </li><li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="./index.html#package">Packages</a>
+                  </li><li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="#">About Us</a>
+                  </li>
+                </ul>
+               
+              </div>
+            </div>
+            <a href="./login.html" class="login-button">Login</a>
+    
+            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+    
+    <section class="registration">
+        <div class="register-form">
+            <h1>Register <span>Here</span></h1>
+            <form action="" onsubmit="return validateform()">
+
+            <input type="text" name="myname1" placeholder="Name" id="name" required>
+            <input type="email" name="myemail" placeholder="Email-Id" id="" required>
+            <input type="tel" name="myphone" placeholder="Phone No." id="phonenum" required>
+            <input type="number" name="myage" placeholder="Age" id="" required>
+            <h4>Gender</h4>
+            <input type="radio" name="mygender" id="" required> Male &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <input type="radio" name="mygender" id=""> Female
+            <h4>Departure</h4>
+            <input type="datetime-local" name="departuredate" id="" required>
+            <h4>Return</h4>
+            <input type="datetime-local" name="returndate" id="" required>
+            <h4>Travel Destination</h4>
+            <input type="checkbox" name="td" id=""> India &nbsp; &nbsp; &nbsp;
+            <input type="checkbox" name="td" id=""> Istanbul &nbsp; &nbsp; &nbsp;
+            <input type="checkbox" name="td" id=""> Paris &nbsp; &nbsp; &nbsp;
+            <input type="checkbox" name="td" id=""> Bali &nbsp; &nbsp; &nbsp;
+            <input type="checkbox" name="td" id=""> Dubai &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="checkbox" name="td" id=""> Geneva &nbsp; &nbsp; &nbsp; 
+            <input type="checkbox" name="td" id=""> Rome &nbsp; &nbsp; &nbsp;
+            <br> <br>
+            <h4>Package</h4>
+            <input type="radio" name="locations" id="loc1" required> Bronze &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="locations" id="loc1"> Silver &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="locations" id="loc1"> Gold &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="locations" id="loc1"> Platinum &nbsp; &nbsp; &nbsp;
+            <br> <br> 
+            <input type="checkbox" name="t&c" id="" checked required> I accept the Terms & Conditions.
+            <br> <br> 
+            <input type="submit" value="Submit" class="submitbtn">
+
+        </form>
+        </div>
+    </section>
+
+    <script src="js/login.js"></script>
+
+</body>
+</html>
